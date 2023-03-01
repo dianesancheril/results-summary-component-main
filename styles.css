@@ -1,0 +1,171 @@
+* {
+    font-family:'Open Sans', sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.center {
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+
+.results {
+    position: absolute;
+    width: 325px;
+    height: 400px;
+    margin: 20px auto;
+    z-index: 2;
+    background-image: linear-gradient(to top,hsla(241, 72%, 50%, 1), hsla(256, 72%, 50%, 0.8));
+    border-radius: 20px;
+    padding: 40px;
+    color: hsl(241, 100%, 89%);
+}
+
+.scores {
+    width:125px;
+    height: 125px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, hsla(256, 72%, 46%, 0.2),hsla(241, 72%, 46%, 0.8));
+    font-size: x-small;
+    color: hsl(241, 100%, 89%, 0.5);
+}
+
+.score {
+    font-size:xx-large;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+}
+
+.summary-container {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    margin: 20px;
+    z-index: 1;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 30px hsl(224, 31%, 28%, 0.3);
+}
+
+.summary {
+    height: 445px;
+    margin-left: 325px;
+    padding: 40px;
+}
+
+.skills {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
+    overflow:hidden;
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    overflow:hidden;
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    overflow:hidden;
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    overflow:hidden;
+}
+
+.icon {
+    display: inline;
+    float: left;
+
+}
+
+.skill-title {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+}
+
+.skill-score {
+    float:right;
+    display: inline;
+}
+
+.r-title {
+    color:hsl(0, 100%, 67%);
+}
+
+.m-title {
+    color:hsl(39, 100%, 56%);
+}
+
+.v-title {
+    color:hsl(166, 100%, 37%);
+}
+
+.vi-title {
+    color:hsl(234, 85%, 45%);
+}
+
+.gray {
+    color: hsl(224, 30%, 27%, 0.6);
+}
+
+.button {
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: small;
+    background-color: hsl(224, 30%, 27%);
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient(to top left,hsla(241, 72%, 46%, 1), rgb(126, 83, 242));
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    margin: 10px auto;
+    width: 100%;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.comments-title {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+}
+
+.comments-para {
+    margin: 15px;
+    font-size: small;
+}
