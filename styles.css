@@ -92,7 +92,6 @@ h1 {
     display: inline;
     float: left;
     margin-left: 10px;
-
 }
 
 .skill-score {
@@ -140,11 +139,10 @@ h1 {
 .attribution {
     font-size: 11px;
     text-align: center;
-    position: absolute;
+    float:left;
     margin: 10px auto;
     width: 100%;
     bottom: 0;
-    z-index: 3;
 }
 
 .attribution a {
@@ -174,30 +172,97 @@ h1 {
     }
 
     .button {
-        margin: 40px 0;
+        margin: 20px 0;
     }
 
-    .attribution {
-        margin: 20px auto;
-    }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 900px) {
+    .container {
+        width: 75%;
+        height:500px;
+        padding: 50px;
+        margin: 0 auto;
+    }
+
     .results {
-        float: left;
+        float:left;
+        height: 100%;
         width: 50%;
         background-image: linear-gradient(to top,hsla(241, 72%, 50%, 1), hsla(256, 72%, 50%, 0.8));
         border-radius: 20px;
-        padding: 0px;
+        padding: 20px 40px 40px 40px;
         color: hsl(241, 100%, 89%);
-        overflow:hidden;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .skills {
+        font-size: 0.8rem;
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        font-weight: 600;
+        display:flow-root;
+    }
+
+    .comments {
+        margin-top: 60px;
+    }
+
+    .comments-para {
+        font-size: 0.8rem;
+    }
+
+    .comments-title {
+        font-size: 1.5rem;
     }
 
     .summary-container {
         float:left;
         width:50%;
-        padding:0px;
+        height: 100%;
+        padding: 20px 40px 40px 40px;
+        margin: 0;
         border-radius: 20px;
-        overflow:hidden;
+        clear: none;
+    }
+
+    .scores {
+        width:150px;
+        height: 150px;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, hsla(256, 72%, 46%, 0.2),hsla(241, 72%, 46%, 0.8));
+        font-size: x-small;
+        color: hsl(241, 100%, 89%, 0.5);
+    }
+
+    .score {
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+
+    }
+
+    .score-group {
+        padding: 5px;
+    }
+
+    .button {
+        margin-top: 40px;;
+    }
+
+    .attribution {
+        position: absolute;
+        font-size: 11px;
+        text-align: center;
+        margin: 10px auto;
+        width: 100%;
     }
 }
