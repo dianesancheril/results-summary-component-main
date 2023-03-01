@@ -1,12 +1,17 @@
 * {
-    font-family:'Open Sans', sans-serif ;
+    font-family:'Quicksand', sans-serif ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: medium;
+    font-weight: 600;
+}
+
 .container {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -17,14 +22,12 @@
 }
 
 .results {
-    position: absolute;
-    width: 325px;
-    height: 400px;
-    margin: 20px auto;
-    z-index: 2;
+    float: left;
+    width: 100%;
     background-image: linear-gradient(to top,hsla(241, 72%, 50%, 1), hsla(256, 72%, 50%, 0.8));
-    border-radius: 20px;
-    padding: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px 40px 40px 40px;
     color: hsl(241, 100%, 89%);
 }
 
@@ -47,20 +50,10 @@
 }
 
 .summary-container {
-    position: absolute;
-    width: 650px;
-    height: 400px;
-    margin: 20px;
-    z-index: 1;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 4px 30px hsl(224, 31%, 28%, 0.3);
-}
-
-.summary {
-    height: 445px;
-    margin-left: 325px;
-    padding: 40px;
+    float:left;
+    clear:left;
+    width:100%;
+    padding:20px 40px 40px 40px;
 }
 
 .skills {
@@ -69,26 +62,24 @@
     width: 100%;
     border-radius: 5px;
     font-size: small;
+    font-weight: 600;
+    display:flow-root;
 }
 
 .reaction {
     background-color: hsl(0, 100%, 67%, 0.1);
-    overflow:hidden;
 }
 
 .memory {
     background-color: hsl(39, 100%, 56%, 0.1);
-    overflow:hidden;
 }
 
 .verbal {
     background-color: hsl(166, 100%, 37%, 0.1);
-    overflow:hidden;
 }
 
 .visual {
     background-color: hsl(234, 85%, 45%, 0.1);
-    overflow:hidden;
 }
 
 .icon {
@@ -101,6 +92,7 @@
     display: inline;
     float: left;
     margin-left: 10px;
+
 }
 
 .skill-score {
@@ -152,6 +144,7 @@
     margin: 10px auto;
     width: 100%;
     bottom: 0;
+    z-index: 3;
 }
 
 .attribution a {
@@ -163,9 +156,48 @@
     font-weight: bold;
     color: white;
     margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.comments-para {
-    margin: 15px;
+.comments {
+    margin-bottom: 10px;
     font-size: small;
+}
+
+@media screen and (min-width:412px) {
+    .summary-container {
+        margin-top: 20px;
+    }
+
+    .skills {
+        margin: 30px 0;
+    }
+
+    .button {
+        margin: 40px 0;
+    }
+
+    .attribution {
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .results {
+        float: left;
+        width: 50%;
+        background-image: linear-gradient(to top,hsla(241, 72%, 50%, 1), hsla(256, 72%, 50%, 0.8));
+        border-radius: 20px;
+        padding: 0px;
+        color: hsl(241, 100%, 89%);
+        overflow:hidden;
+    }
+
+    .summary-container {
+        float:left;
+        width:50%;
+        padding:0px;
+        border-radius: 20px;
+        overflow:hidden;
+    }
 }
