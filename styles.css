@@ -10,10 +10,10 @@ h1 {
     font-weight: 600;
 }
 
-.container {
+/* .container {
     width: 100%;
     margin: 0 auto;
-}
+} */
 
 .center {
     margin: auto;
@@ -178,44 +178,39 @@ h1 {
 }
 
 @media screen and (min-width: 900px) {
+
     .container {
-        width: 100%;
-        margin: 50px auto;
+        width: 50%;
+        margin: 0 auto;
     }
 
     .results {
         position: absolute;
-        height: 55%;
-        width: 50%;
-        background-image: linear-gradient(to top,hsla(241, 72%, 50%, 1), hsla(256, 72%, 50%, 0.8));
+        float:none;
+        width:25%;
+        z-index: 2;
+        padding: 40px;
         border-radius: 20px;
-        padding: 40px 40px 40px 40px;
-        color: hsl(241, 100%, 89%);
-        z-index:2;
-        box-shadow: 0px 4px 30px hsl(224, 31%, 28%, 0.3);
+        margin: 20px auto;
     }
 
     .summary-container {
         position: absolute;
-        width:100%;
-        z-index: 1;
-        height: 55%;
-        padding: 20px 40px 40px 40px;
+        float:none;
+        clear:none;
         margin: 0;
+        margin: 20px auto;
+        padding: 41px;
+        width: 50%;
+        z-index: 1;
         border-radius: 20px;
-        clear: none;
         box-shadow: 0px 4px 30px hsl(224, 31%, 28%, 0.3);
     }
 
     .summary {
-        float:right;
-        width: 50%;
-        height: 100%;
-        padding: 20px 40px 40px 40px;
         margin: 0;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        clear: none;
+        margin-left: 53%;
+
     }
 
     h1 {
